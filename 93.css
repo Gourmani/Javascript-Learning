@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('https://media.wired.com/photos/641e1a1b43ffd37beea02cdf/4:3/w_4497,h_3373,c_limit/Best%20Password%20Managers%20Gear%20GettyImages-1408198405.png');
+}
+
+.container {
+    text-align: center;
+}
+
+.password-container {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #e00a0a;
+    text-decoration: solid;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0a616;
+}
+
+#generated-password {
+    font-size: 18px;
+    margin-top: 10px;
+}

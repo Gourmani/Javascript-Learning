@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #jokeContainer {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="jokeContainer"></div>
+
+    <script>
+        // Array of jokes (you can replace this with jokes from any website)
+        const jokesArray = [
+            "Joke 1",
+            "Joke 2",
+            "Joke 3",
+            "Joke 4",
+            "Joke 5",
+            "Joke 6",
+            "Joke 7",
+            "Joke 8",
+            "Joke 9",
+            "Joke 10",
+            // Add more jokes as needed
+        ];
+
+        // Function to get a random joke from the array
+        function getRandomJoke() {
+            const randomIndex = Math.floor(Math.random() * jokesArray.length);
+            return jokesArray[randomIndex];
+        }
+
+        // Function to display a random joke in the div
+        function displayRandomJoke() {
+            const jokeContainer = document.getElementById('jokeContainer');
+            const randomJoke = getRandomJoke();
+            jokeContainer.innerHTML = `<p>${randomJoke}</p>`;
+        }
+
+        // Display a random joke on page load
+        displayRandomJoke();
+    </script>
+</body>
+</html>
